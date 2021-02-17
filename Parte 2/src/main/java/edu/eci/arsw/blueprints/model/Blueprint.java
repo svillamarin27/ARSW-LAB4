@@ -22,14 +22,21 @@ public class Blueprint {
     }
          
     public Blueprint(String author, String name){
-        this.name=name;
-        points=new ArrayList<>();
+    	this.author = author;
+        this.name = name;
+        points = new ArrayList<>();
     }
 
     public Blueprint() {
     }    
     
-    public String getName() {
+    public Blueprint(String author, String name, List<Point> list) {
+		this.author = author;
+		this.name = name;
+		this.points = list;
+	}
+
+	public String getName() {
         return name;
     }
 
